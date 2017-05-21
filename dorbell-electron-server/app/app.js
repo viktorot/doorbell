@@ -63,13 +63,20 @@ module.exports = () => {
 
   const notifier = require('node-notifier');
   app.get('/ring', function(req, res) {
+    var name = req.query.name
+    if (name === '' || name === undefined) {
+      name = 'Unknown'
+    }
+
+    var msg = name + ' is here'
+
     notifier.notify({
-        title: 'Title',
-        message: 'Hello from node, Mr. User!'
+        title: 'Ring ring...',
+        message: msg
     })
 
-    console.log('ringing...')
-    res.send("ringing...")
+    //console.log(name + ' is ringing...')
+    res.send(msg)
   });
 
   // Start The HTTP Server

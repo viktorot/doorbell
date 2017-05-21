@@ -1,0 +1,34 @@
+{
+  "name": "dorbell-electron-server",
+  "version": "0.0.1",
+  "description": "A doorbell",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main",
+    "bower": "bower install",
+    "gulp": "gulp",
+    "sass": "gulp compile-sass",
+    "test": "echo \"Error: no tests here\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "electron-prebuilt": "^1.4.13",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "node-notifier": "^5.1.2"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "bower-webpack-plugin": "^0.1.9",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-webpack": "^1.5.0",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "webpack": "^1.13.1"
+  }
+}
